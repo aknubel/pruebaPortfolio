@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
 	<meta name="viewport" content=width-device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Personal Portfolio</title>
 	<link rel="stylesheet" href="style.css">
+<!-- LINK A FONTAWESOME -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
 </head>
 <body>
 <!-- BARRA DE ARRIBA CON LOS LINKS -->
 	<header>
 		<a href="#" class="logo">Portfolio</a>
-		<div class="toggle"></div>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Services</a></li>
-			<li><a href="#">Work</a></li>
-			<li><a href="#">Contact</a></li>
+		<div class="toggle" onclick="toggleMenu();"></div>
+		<ul class="menu">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#testimonial">Testimonial</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</header>
 	
 <!-- SECCION DE PRESENTACION -->
-	<section class="banner">
+	<section class="banner" id="home">
 		<div class="textBx">
 			<h2> Hello, we are <br><span>Bel Air Tremblant </span></h2>
 			<h3> And this is a test of header 3 </h3>
-			<a href="#" class="btn"> About Me</a>
+			<a href="#about" class="btn"> About Us</a>
 		</div>
 	</section>
 	
 <!-- SECCION ACERCA DE -->
-	<section class="about">
+	<section class="about" id="about">
 		<div class="heading">
 			<h2>About Us</h2>
 		</div>
@@ -62,7 +63,7 @@
 		</div>
 	</section>
 <!--SECCION DE SERVICIOS -->
-	<section class="services">
+	<section class="services" id="services">
 	<div class="heading white">
 			<h2>Our services</h2>
 			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
@@ -112,20 +113,137 @@
 				eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 		</div>
 	</div>
-	
-		
-	
 	</section>
 	
+<!--SECCION WORK -->
+<section class="work" id="work">
+	<div class="heading">
+			<h2>Our latest work</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+				eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+	</div>
+	<div class="content">
+		<div class="workBx">
+			<img src="product1.jpg">
+		</div>
+		
+		<div class="workBx">
+			<img src="product2.jpg">
+		</div>
+		
+		<div class="workBx">
+			<img src="product3.jpg">
+		</div>
+		
+		<div class="workBx">
+			<img src="product4.jpg">
+		</div>
+	</div>
+	<div class="heading">
+		<a href="#" class="btn">View More</a>	
+	</div>
+</section>
+
+<!-- SECCION TESTIMONIAL -->
+<section class="testimonial" id="testimonial">
+	<div class="heading">
+			<h2>Testimonial</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+				eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+	</div>
+	<div class="content">
+		<div class="testimonialBx">
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+				eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+			<h3>Someone Famous<br><span>Creative Designer</span></h3>
+		</div>
+		
+		<div class="testimonialBx">
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+				eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+			<h3>Famous Architect<br><span>Architect</span></h3>
+		</div>
+	</div>
+</section>
+
+<!-- SECCION CONTACTO -->
+<section class="contact" id="contact">
+	<div class="heading white">
+			<h2>Contact Us</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+	</div>
+	
+	<div class="content">
+		<div class="contactInfo">
+			<h3>Contact Info</h3>
+			<div class="contactInfoBx">
+				<div class="box">
+					<div class="icon">
+						<i class="fa fa-map-marker"></i>
+					</div>
+					<div class="text">
+						<h3>Address</h3>
+						<p>4671 Camp Road,<br>Winnipeg, Canada,<br>55060</p>
+					</div>
+				</div>
+				
+				<div class="box">
+					<div class="icon">
+						<i class="fa fa-phone"></i>
+					</div>
+					<div class="text">
+						<h3>Phone</h3>
+						<p>0342-4524596</p>
+					</div>
+				</div>
+				
+				<div class="box">
+					<div class="icon">
+						<i class="fa fa-envelope"></i>
+					</div>
+					<div class="text">
+						<h3>Email</h3>
+						<p>aknubel@outlook.com</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	<!--Formulario de contacto -->
+		<div class="formBx">
+					<form>
+						<h3>Message Us</h3>
+							<input type="text" name="" placeholder="Full Name">
+							<input type="email" name="" placeholder="Email">
+							<textarea placeholder="Your Message"></textarea>
+							<input type="submit" value="Send">
+					</form>
+		</div>
+
+	</div>
+</section>
+
+<!-- Copyright -->
+	<div class="copyright">
+		<p>Copyright Alejandro Knubel, Todos los Derechos Reservados</p>
+	</div>
+
+
 <!-- CODIGO JAVASCRIPT -->
 	<script type="text/javascript">
 		window.addEventListener('scroll', function(){
 		var header = document.querySelector('header');
 		header.classList.toggle('sticky', window.scrollY > 0);
-		})
+		});
+
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var menu = document.querySelector('.menu');
+			menuToggle.classList.toggle('active')
+			menu.classList.toggle('active')
+		}
 	</script>
 </body>
-
 
 
 </html>
